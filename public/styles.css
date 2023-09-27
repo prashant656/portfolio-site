@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3b4a62;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav {
+    background-color: #526b4a;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.portfolio-section {
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.signature {
+    max-width: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.myphoto {
+    max-width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 650px;
+}
+.photo1 {
+    max-width: 250px;
+    position: absolute;
+    bottom: 400px;
+    right: 250px;
+}
+.photo2 {
+    max-width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 150px;
+}
+.photo3 {
+    max-width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+}
