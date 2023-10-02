@@ -11,28 +11,6 @@ body {
     position: relative;
 }
 
-nav {
-    background-color: #526b4a;
-    width: 100%;
-    position: absolute;
-    top: 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
 
 header {
     padding: 10px 0;
@@ -78,4 +56,28 @@ header {
     position: absolute;
     bottom: 200px;
     right: 400px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    flex: 0 0 auto; /* Make the footer not grow, and be at its natural height */
+}
+
+footer p {
+    font-size: 16px;
+    margin: 10px;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.student-id {
+    font-style: italic;
+}
+
+.thank-you {
+    font-weight: bold;
 }

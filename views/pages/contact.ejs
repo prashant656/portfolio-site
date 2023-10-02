@@ -1,89 +1,126 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Me</title>
-  <style>
-    /* Add styling to the contact section */
-    .contact {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px;
-      text-align: center;
-    }
+    <%- include("../partials/head"); %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* Style the contact list */
-    .contact-list {
-      list-style: none;
-      padding: 0;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
 
-    /* Style each contact list item */
-    .contact-list li {
-      margin-bottom: 20px;
-    }
+        h1 {
+            font-size: 32px;
+        }
 
-    /* Style the Font Awesome icons */
-    .contact-list a i {
-      font-size: 24px; /* Adjust the icon size */
-      margin-bottom: 5px;
-    }
+        .contact-form, .social-links {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    /* Add styles to the anchor links */
-    .contact-list a {
-      text-decoration: none;
-      color: #333;
-      display: block; /* Make the entire block clickable */
-    }
-  </style>
-  <!-- Include Font Awesome CSS (you may need to adjust the URL) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input, textarea {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            margin: 10px 0;
+        }
+
+        /* CSS for social platform links */
+        .social-links a {
+            display: inline-block;
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .social-links a:hover {
+            background-color: #0052a3;
+        }
+    </style>
 </head>
 <body>
-  <div class="contact">
-    <h2>Contact Information</h2>
-    <ul class="contact-list">
-      <li>
-        <a href="https://www.instagram.com/your_username" target="_blank">
-          <i class="fab fa-instagram"></i> <!-- Instagram icon -->
-          Instagram
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/your_username" target="_blank">
-          <i class="fab fa-facebook"></i> <!-- Facebook icon -->
-          Facebook
-        </a>
-      </li>
-      <li>
-        <a href="https://wa.me/1234567890" target="_blank">
-          <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
-          WhatsApp
-        </a>
-      </li>
-      <li>
-        <a href="mailto:youremail@example.com">
-          <i class="fas fa-envelope"></i> <!-- Email icon -->
-          Email
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/your_username" target="_blank">
-          <i class="fab fa-twitter"></i> <!-- Twitter icon -->
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/your_username" target="_blank">
-          <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
-          LinkedIn
-        </a>
-      </li>
-    </ul>
-  </div>
-  <center>
-    <a href="/"> <h1>Home</h2></a>
-  </center>
+    <header>
+        <h1>Contact the Web Developer - Prashant</h1>
+    </header>
+
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form id="contact-form" action="process_form.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" id="submit-button">Submit</button>
+            
+        </form>
+    </section>
+
+    <section class="social-links">
+        <h2>Connect on Social Media</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/yourprofile" target="_blank">LinkedIn</a></li>
+            <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        </ul>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const contactForm = document.getElementById("contact-form");
+            const thankYouNotification = document.getElementById("thank-you-notification");
+            const submitButton = document.getElementById("submit-button");
+
+            submitButton.addEventListener("click", function() {
+                // 1. Redirect the user to the home page
+                window.location.href = "/"; // Change this to the desired URL
+
+                alert("Thank you for contacting us.");
+
+                
+                contactForm.reset();
+            });
+        });
+    </script>
+
+    <%- include("../partials/footer"); %>
 </body>
 </html>
