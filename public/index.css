@@ -1,0 +1,61 @@
+.portfolio-section {
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.myphoto {
+    max-width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 650px;
+}
+.photo1 {
+    max-width: 250px;
+    position: absolute;
+    bottom: 400px;
+    right: 250px;
+}
+.photo2 {
+    max-width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 150px;
+}
+.photo3 {
+    max-width: 250px;
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+}
+/* footer {
+    position:fixed;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    flex: 0 0 auto; /* Make the footer not grow, and be at its natural height */
+    /* bottom: 0;
+} */
+
+/* footer p {
+    font-size: 16px;
+    margin: 10px;
+} */
+
+.copyright {
+    font-weight: bold;
+}
+
+.student-id {
+    font-style: italic;
+}
+
+.thank-you {
+    font-weight: bold;
+}
