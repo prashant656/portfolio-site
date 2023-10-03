@@ -1,0 +1,68 @@
+
+.about {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bio {
+    flex: 1;
+    text-align: left;
+}
+
+.bio-heading {
+    font-size: 24px;
+    color: #fff;
+}
+
+.bio-text {
+    font-size: 16px;
+    color: #fff;
+}
+
+.skills {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.skills-heading {
+    font-size: 24px;
+    color: black;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 16px;
+    color: black;
+    margin: 10px 0;
+}
+
+.skills {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+    animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

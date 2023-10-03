@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <%- include("../partials/head"); %>
+  <%- include("../partials/content"); %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
@@ -12,15 +13,18 @@
         <section id="about" class="portfolio">
             <div class="intro-text">
                 <h1>Hello, I am Prashant Upreti</h1>
-                <p>Web Developer</p>
+                <p>Web Developer | JavaScript Programmer | C# Developer</p>
             </div>
-            <img class="signature" src="signature.png" alt="Your Signature">
-            <img class="myphoto" src="myphoto.jpg" alt="My Photo">
-            <img class="photo1" src="photo1.jpeg" alt="photo1">
-            <img class="photo2" src="photo2.jpeg" alt="photo2">
-            <img class="photo3" src="photo3.jpeg" alt="photo3">
+
+            <div class="images">
+                <img class="myphoto" src="myphoto.jpg" alt="My Photo">
+                <img class="photo1" src="photo1.jpeg" alt="photo1">
+                <img class="photo2" src="photo2.jpeg" alt="photo2">
+                <img class="photo3" src="photo3.jpeg" alt="photo3">
+            </div>
+            
         </section>
     </header>
 </body>
-<footer><%- include("../partials/footer"); %></footer>
+<%- include("../partials/footer"); %>
 </html>

@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include("../partials/head"); %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutMe.css">
+    <%- include("../partials/head"); %>
+    <%- include("../partials/content"); %>
 </head>
 <body>
-    <center>
-        <h1><%= title %></h1>
-    </center>
+    <header>
+        <h1>About Me - Prashant Upreti</h1>
+        <p>Web Developer | JavaScript Programmer | C# Developer</p>
+    </header>
 
-    <ol>
-    <% details.forEach(detail => { %>
-      <br>
-      <li><%=detail %></li>
-      <%})%>
-    </ol>
+    <section class="about">
+        <img src="services_pic.jpeg" alt="Picture" class="img">
+        <div class="bio">
+            <h2>Hi, I'm Prashant Upreti</h2>
+            <p>I'm a passionate web developer with expertise in JavaScript and C# programming. I love creating interactive and user-friendly web applications that solve real-world problems.</p>
+        </div>
+    </section>
 
-    <br>
-    <center>
-      <a href="/"> Home </a>
-    </center>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Front-end Development</li>
+            <li>JavaScript Development</li>
+            <li>C# Programming</li>
+            <li>Web Design</li>
+            <li>Database Management</li>
+            <li>Responsive Web Design</li>
+        </ul>
+    </section>
+<%- include("../partials/footer"); %>
 </body>
 </html>

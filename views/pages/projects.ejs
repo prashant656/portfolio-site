@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+    <%- include("../partials/head"); %>
+    <%- include("../partials/content"); %>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>Web Designing | C# Programming | JavaScript Programming</p>
+    </header>
+
+    <section class="project">
+        <img src="webdevelopment.jpeg" alt="Web Design Project">
+        <div class="project-details">
+            <h2>Web Design Project</h2>
+            <p>Created visually appealing and user-friendly websites.</p>
+        </div>
+    </section>
+
+    <section class="project">
+        <img src="csharp.jpeg" alt="C# Programming Project">
+        <div class="project-details">
+            <h2>C# Programming Project</h2>
+            <p>Developed software applications using C# for various purposes.</p>
+        </div>
+    </section>
+
+    <section class="project">
+        <img src="javascript.jpeg" alt="JavaScript Programming Project">
+        <div class="project-details">
+            <h2>JavaScript Programming Project</h2>
+            <p>Created interactive web applications with JavaScript.</p>
+        </div>
+    </section>
+    <%- include("../partials/footer"); %>
+</body>
+</html>
